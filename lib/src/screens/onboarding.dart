@@ -10,7 +10,7 @@ class OnBoarding extends StatelessWidget {
     return [
       IntroModel(
         title: Text(
-          'Welcome to SentientMate',
+          'Manage Your Tasks',
           style: TextStyle(
             color: Theme.of(context).colorScheme.inversePrimary,
             fontSize: 18,
@@ -19,7 +19,7 @@ class OnBoarding extends StatelessWidget {
           textAlign: TextAlign.center,
         ),
         description: Text(
-          'Meet your AI companions designed to provide companionship and support in a safe and welcoming space.',
+          'Easily create, organize, and track your daily tasks.',
           textAlign: TextAlign.center,
           style: TextStyle(
             color: Theme.of(context).colorScheme.inversePrimary, //TODO:
@@ -28,7 +28,7 @@ class OnBoarding extends StatelessWidget {
           ),
         ),
         image: Image.asset(
-          'assets/images/onboard1.png',
+          'assets/about-extra-1.svg',
           fit: BoxFit.contain,
           height: MediaQuery.of(context).size.height * 0.5,
         ).animate().fadeIn().scale().move(
@@ -38,7 +38,7 @@ class OnBoarding extends StatelessWidget {
       ),
       IntroModel(
         title: Text(
-          'Share and Connect',
+          'Api in a different Page',
           style: TextStyle(
             color: Theme.of(context).colorScheme.inversePrimary,
             fontSize: 18,
@@ -47,7 +47,7 @@ class OnBoarding extends StatelessWidget {
           textAlign: TextAlign.center,
         ),
         description: Text(
-          'Easily share your thoughts and images with your AI companions. Connect effortlessly with our advanced chat features.',
+          'Called an Api in a different Page, inorder to complete the assessment.',
           textAlign: TextAlign.center,
           style: TextStyle(
             color: Theme.of(context).colorScheme.inversePrimary,
@@ -56,7 +56,7 @@ class OnBoarding extends StatelessWidget {
           ),
         ),
         image: Image.asset(
-          'assets/images/onboard2.png',
+          'assets/about-extra-2.svg',
           fit: BoxFit.contain,
           height: MediaQuery.of(context).size.height * 0.5,
         ).animate().fadeIn().scale().move(
@@ -66,7 +66,7 @@ class OnBoarding extends StatelessWidget {
       ),
       IntroModel(
         title: Text(
-          'Huddle Your Thoughts',
+          'Offline Access',
           style: TextStyle(
             color: Theme.of(context).colorScheme.inversePrimary,
             fontSize: 18,
@@ -75,7 +75,7 @@ class OnBoarding extends StatelessWidget {
           textAlign: TextAlign.center,
         ),
         description: Text(
-          'Use our Huddle feature to easily express your thoughts and feelings to your AI companions. SentientMate is here to listen and support you.',
+          'Access your tasks and photos even without an internet connection.',
           textAlign: TextAlign.center,
           style: TextStyle(
             color: Theme.of(context).colorScheme.inversePrimary,
@@ -84,7 +84,7 @@ class OnBoarding extends StatelessWidget {
           ),
         ),
         image: Image.asset(
-          'assets/images/onboard3.png',
+          'assets/about-img.svg',
           fit: BoxFit.contain,
           height: MediaQuery.of(context).size.height * 0.5,
         ).animate().fadeIn().scale().move(
@@ -106,7 +106,7 @@ class OnBoarding extends StatelessWidget {
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-              builder: (context) => const Homepage(),
+              builder: (context) => const HomePage(),
             ),
           );
         },

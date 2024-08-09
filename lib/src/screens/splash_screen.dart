@@ -77,7 +77,7 @@ class _SplashScreenState extends State<SplashScreen>
             child: const Center(
               child: SizedBox(
                 child: Image(
-                  image: AssetImage('assets/images/logo.png'),
+                  image: AssetImage('assets/shopliax-logo.png'),
                   fit: BoxFit.contain,
                   width: 192,
                   height: 192,
