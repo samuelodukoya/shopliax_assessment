@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_onboarding/flutter_onboarding.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:shopliax_assessment/src/screens/homepage.dart';
 
 class OnBoarding extends StatelessWidget {
@@ -27,7 +28,7 @@ class OnBoarding extends StatelessWidget {
             fontWeight: FontWeight.w400,
           ),
         ),
-        image: Image.asset(
+        image: SvgPicture.asset(
           'assets/about-extra-1.svg',
           fit: BoxFit.contain,
           height: MediaQuery.of(context).size.height * 0.5,
@@ -55,7 +56,7 @@ class OnBoarding extends StatelessWidget {
             fontWeight: FontWeight.w400,
           ),
         ),
-        image: Image.asset(
+        image: SvgPicture.asset(
           'assets/about-extra-2.svg',
           fit: BoxFit.contain,
           height: MediaQuery.of(context).size.height * 0.5,
@@ -83,7 +84,7 @@ class OnBoarding extends StatelessWidget {
             fontWeight: FontWeight.w400,
           ),
         ),
-        image: Image.asset(
+        image: SvgPicture.asset(
           'assets/about-img.svg',
           fit: BoxFit.contain,
           height: MediaQuery.of(context).size.height * 0.5,
