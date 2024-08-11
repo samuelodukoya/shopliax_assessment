@@ -1,6 +1,8 @@
 // ignore_for_file: library_private_types_in_public_api
 
 import 'package:flutter/material.dart';
+import 'package:shopliax_assessment/src/connectivity_banner/connection_banner.dart';
+import 'package:shopliax_assessment/src/screens/api_screen.dart';
 
 import '../data/storage.dart';
 import '../models/task_model.dart';
@@ -161,7 +163,13 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Flutter ToDo App'),
+        title: const Text('Shopliax Assessment'),
+        actions: [
+          IconButton(
+            onPressed: () => const ConnectivityBanner(child: PhotoListScreen(),),
+            icon: const Icon(Icons.photo),
+          ),
+        ],
       ),
       body: AnimatedList(
         key: _listKey,
