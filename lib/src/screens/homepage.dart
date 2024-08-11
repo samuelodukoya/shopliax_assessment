@@ -166,7 +166,7 @@ class _HomePageState extends State<HomePage> {
         title: const Text('Shopliax Assessment'),
         actions: [
           IconButton(
-            onPressed: () => const ConnectivityBanner(child: PhotoListScreen(),),
+            onPressed: () => const PhotoListScreen(),
             icon: const Icon(Icons.photo),
           ),
         ],
