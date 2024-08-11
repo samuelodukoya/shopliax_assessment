@@ -168,7 +168,7 @@ class _HomePageState extends State<HomePage> {
           IconButton(
             onPressed: () {
               Navigator.of(context).push(
-                MaterialPageRoute(builder: (context) => PhotoListScreen()),
+                MaterialPageRoute(builder: (context) => ConnectivityBanner(child: PhotoListScreen(),),),
               );
             },
             icon: const Icon(Icons.photo),
