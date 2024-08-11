@@ -1,7 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- Add this line for Internet permission -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Storage permissions -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" 
+                     android:maxSdkVersion="28" />
+    <!-- For Android 10 (API level 29) and above -->
     <application
+        android:requestLegacyExternalStorage="true"
         android:label="shopliax_assessment"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
