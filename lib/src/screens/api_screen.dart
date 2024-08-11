@@ -100,7 +100,7 @@ class _PhotoListScreenState extends State<PhotoListScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Photo List'),
+        title: const Text('Shopliax Api Screen'),
       ),
       body: _buildBody(),
     );
